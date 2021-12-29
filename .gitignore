@@ -1,3 +1,4 @@
 compiled
 *.tsbuildinfo
 .DS_Store
+node_modules
