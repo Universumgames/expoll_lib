@@ -6,6 +6,7 @@ export interface CreateUserRequest {
     lastName: string
     mail: string
     username: string
+    captcha: string
 }
 
 export interface CreateUserResponse {
@@ -52,6 +53,12 @@ export interface EditPollRequest extends PollEdit {}
 
 export interface VoteRequest extends VoteChange {}
 
-export interface UserListResponse {
+export interface AdminUserListResponse {
     users: UserDataResponse[]
+    totalCount: number
+}
+
+export interface AdminPollListResponse {
+    polls: SimplePoll[]
+    totalCount: number
 }
