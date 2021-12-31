@@ -2,7 +2,6 @@
     "compilerOptions": {
         "declaration": true,
         "declarationMap": true,
-        "outDir": "./compiled",
-        "composite": true
+        "outDir": "./compiled"
     }
 }
