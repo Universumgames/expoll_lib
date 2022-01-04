@@ -36,7 +36,7 @@ export interface SimpleUser {
 }
 
 export interface SimpleUserVotes {
-    user?: SimpleUser
+    user: SimpleUser
     votes: simpleVote[]
 }
 
@@ -61,12 +61,13 @@ export interface simpleVote {
 
 export interface PollEdit {
     inviteLink?: string
+    leave?: boolean
     pollID: tPollID
     name?: string
     description?: string
     maxPerUserVoteCount?: number
-    userRemove?: string[]
-    votes?: { userID: string; optionID: tOptionId; votedFor: boolean }[]
+    userRemove?: tUserID[]
+    votes?: { userID: tUserID; optionID: tOptionId; votedFor: boolean }[]
     options?: ComplexOption[]
     delete?: boolean
 }
