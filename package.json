@@ -18,6 +18,5 @@
     "license": "MIT",
     "dependencies": {
         "typescript": "^4.5.4"
-    },
-    "type": "module"
+    }
 }
