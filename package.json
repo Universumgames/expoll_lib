@@ -5,7 +5,7 @@
     "main": "compiled/index.js",
     "types": "compiled/index.d.ts",
     "scripts": {
-        "prepare": "npm run build && cp ../package.json .",
+        "prepare": "npm run build",
         "build": "npx tsc --build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
@@ -20,5 +20,9 @@
     },
     "files": [
         "compiled/**/*"
-    ]
+    ],
+    "exports": {
+        "./": "./compiled/"
+    },
+    "type": "module"
 }
