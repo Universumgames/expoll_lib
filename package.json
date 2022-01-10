@@ -5,7 +5,8 @@
     "main": "compiled/",
     "types": "compiled/",
     "scripts": {
-        "prepare": "npm run build",
+        "prepare": "npm run finalbuild",
+        "finalbuild": "npx tsc --build --outDir . ",
         "build": "npx tsc --build",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
