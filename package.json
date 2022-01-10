@@ -19,8 +19,5 @@
     "dependencies": {
         "typescript": "^4.5.4"
     },
-    "files": [
-        "compiled/**/*"
-    ],
     "type": "module"
 }
