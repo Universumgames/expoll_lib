@@ -2,8 +2,8 @@
     "name": "expoll-lib",
     "version": "0.1.0",
     "description": "",
-    "main": "compiled/index.js",
-    "types": "compiled/index.d.ts",
+    "main": "index.js",
+    "types": "index.d.ts",
     "scripts": {
         "prepare": "npm run build",
         "build": "npx tsc --build",
@@ -21,8 +21,6 @@
     "files": [
         "compiled/**/*"
     ],
-    "exports": {
-        "./": "./compiled/"
-    },
+    "exports": "./compiled/index.js",
     "type": "module"
 }
