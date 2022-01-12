@@ -62,3 +62,16 @@ export interface AdminPollListResponse {
     polls: SimplePoll[]
     totalCount: number
 }
+
+export interface EditUserRequest {
+    delete?: boolean
+    mail?: string
+    firstName?: string
+    lastName?: string
+    username?: string
+}
+
+export interface AdminEditUserRequest extends EditUserRequest {
+    userID: tUserID
+    admin?: boolean
+}
