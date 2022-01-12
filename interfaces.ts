@@ -20,7 +20,8 @@ export enum ReturnCode {
     INVALID_TYPE = 409,
     PAYLOAD_TOO_LARGE = 413,
     TOO_MANY_POLLS = 413,
-    INTERNAL_SERVER_ERROR = 500
+    INTERNAL_SERVER_ERROR = 500,
+    NOT_IMPLEMENTED = 501
 }
 
 export interface ISession {
