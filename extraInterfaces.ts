@@ -52,6 +52,7 @@ export interface DetailedPoll {
     type: PollType
     options: ComplexOption[]
     userVotes: SimpleUserVotes[]
+    allowsMaybe: boolean
 }
 
 export interface simpleVote {
@@ -70,6 +71,7 @@ export interface PollEdit {
     votes?: { userID: tUserID; optionID: tOptionId; votedFor: VoteValue }[]
     options?: ComplexOption[]
     delete?: boolean
+    allowsMaybe?: boolean
 }
 
 export interface VoteChange {

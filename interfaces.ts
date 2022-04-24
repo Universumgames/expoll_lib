@@ -65,6 +65,7 @@ export interface IPoll {
     votes: IVote[]
 
     maxPerUserVoteCount: number
+    allowsMaybe: boolean
 }
 
 /**
