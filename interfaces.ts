@@ -106,5 +106,11 @@ export interface IVote {
     user: IUser
     poll: IPoll
     optionID: tOptionId
-    votedFor: boolean
+    votedFor: VoteValue
+}
+
+export enum VoteValue {
+    no = 0,
+    yes = 1,
+    maybe = 2
 }
