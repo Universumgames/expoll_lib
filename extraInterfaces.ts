@@ -1,4 +1,4 @@
-import { PollType, tDate, tDateTime, tOptionId, tPollID, tUserID } from "./interfaces"
+import { PollType, tDate, tDateTime, tOptionId, tPollID, tUserID, VoteValue } from "./interfaces"
 
 export interface SimplePoll {
     pollID: tPollID
@@ -56,7 +56,7 @@ export interface DetailedPoll {
 
 export interface simpleVote {
     optionID: tOptionId
-    votedFor?: boolean
+    votedFor?: VoteValue
 }
 
 export interface PollEdit {
@@ -67,7 +67,7 @@ export interface PollEdit {
     description?: string
     maxPerUserVoteCount?: number
     userRemove?: tUserID[]
-    votes?: { userID: tUserID; optionID: tOptionId; votedFor: boolean }[]
+    votes?: { userID: tUserID; optionID: tOptionId; votedFor: VoteChange }[]
     options?: ComplexOption[]
     delete?: boolean
 }
@@ -75,6 +75,6 @@ export interface PollEdit {
 export interface VoteChange {
     pollID: tPollID
     optionID: tOptionId
-    votedFor: boolean
+    votedFor: VoteChange
     userID?: tUserID
 }
