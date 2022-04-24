@@ -7,5 +7,6 @@ export interface UserInfo {
     lastName: string
     mail: string
     admin: boolean
+    active: boolean
     superAdmin: boolean
 }

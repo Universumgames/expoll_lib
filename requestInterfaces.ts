@@ -1,3 +1,4 @@
+import { UserInfo } from "./adminInterfaces"
 import { PollType, tPollID, tUserID } from "./interfaces"
 import { ComplexOption, DetailedPoll, PollEdit, SimplePoll, VoteChange } from "./extraInterfaces"
 
@@ -55,7 +56,7 @@ export interface EditPollRequest extends PollEdit {}
 export interface VoteRequest extends VoteChange {}
 
 export interface AdminUserListResponse {
-    users: UserDataResponse[]
+    users: UserInfo[]
     totalCount: number
 }
 
