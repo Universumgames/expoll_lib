@@ -40,6 +40,11 @@ export interface SimpleUserVotes {
     votes: simpleVote[]
 }
 
+export interface SimpleUserNote {
+    user: SimpleUser
+    note: string
+}
+
 export interface DetailedPoll {
     pollID: tPollID
     admin: SimpleUser
@@ -52,6 +57,7 @@ export interface DetailedPoll {
     type: PollType
     options: ComplexOption[]
     userVotes: SimpleUserVotes[]
+    userNotes: SimpleUserNote[]
     allowsMaybe: boolean
 }
 
@@ -72,6 +78,7 @@ export interface PollEdit {
     options?: ComplexOption[]
     delete?: boolean
     allowsMaybe?: boolean
+    notes?: { userID: tUserID; note: string }[]
 }
 
 export interface VoteChange {
