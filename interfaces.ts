@@ -115,3 +115,9 @@ export enum VoteValue {
     yes = 1,
     maybe = 2
 }
+
+export interface IPollUserNote {
+    user: IUser
+    poll: IPoll
+    note: string
+}
