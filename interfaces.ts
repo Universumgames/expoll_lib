@@ -68,6 +68,7 @@ export interface IPoll {
 
     maxPerUserVoteCount: number
     allowsMaybe: boolean
+    allowsEditing: boolean
 }
 
 /**

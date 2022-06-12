@@ -45,6 +45,7 @@ export interface CreatePollRequest {
     type: PollType
     options: ComplexOption[]
     allowsMaybe: boolean
+    allowsEditing: boolean
 }
 
 export interface CreatePollResponse {

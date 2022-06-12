@@ -79,6 +79,7 @@ export interface PollEdit {
     delete?: boolean
     allowsMaybe?: boolean
     notes?: { userID: tUserID; note: string }[]
+    allowsEditing?: boolean
 }
 
 export interface VoteChange {
