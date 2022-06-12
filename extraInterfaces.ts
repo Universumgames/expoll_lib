@@ -59,6 +59,7 @@ export interface DetailedPoll {
     userVotes: SimpleUserVotes[]
     userNotes: SimpleUserNote[]
     allowsMaybe: boolean
+    allowsEditing: boolean
 }
 
 export interface simpleVote {
