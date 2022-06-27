@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-export type tUserID = number
+export type tUserID = string
 export type tPollID = string
 export type tOptionId = number
 
@@ -31,6 +31,7 @@ export enum ReturnCode {
 export interface ISession {
     loginKey: string
     expiration: tDateTime
+    userAgent: string
     user: IUser
 }
 
