@@ -2,8 +2,6 @@
     "name": "expoll-lib",
     "version": "2.0.0",
     "description": "",
-    "main": "compiled/",
-    "types": "compiled/",
     "scripts": {
         "prepare": "npm run finalbuild",
         "finalbuild": "npx tsc --outDir . ",
