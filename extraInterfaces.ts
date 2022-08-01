@@ -89,3 +89,8 @@ export interface VoteChange {
     votedFor: VoteValue
     userID?: tUserID
 }
+
+export interface MailRegexEntry {
+    regex: string
+    blacklist: boolean
+}
