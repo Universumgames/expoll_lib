@@ -8,6 +8,7 @@ export interface SimplePoll {
     lastUpdated: Date
     type: PollType
     name: string
+    editable: boolean
 }
 
 export interface ComplexOption {
