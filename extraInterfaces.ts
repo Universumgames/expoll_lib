@@ -96,3 +96,12 @@ export interface MailRegexEntry {
     regex: string
     blacklist: boolean
 }
+
+export interface NotificationPreferences {
+    voteChange: boolean
+    userAdded: boolean
+    userRemoved: boolean
+    pollDeleted: boolean
+    pollEdited: boolean
+    pollArchived: boolean
+}

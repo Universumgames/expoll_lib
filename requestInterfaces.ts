@@ -1,6 +1,13 @@
 import { UserInfo } from "./adminInterfaces"
 import { PollType, tPollID, tUserID } from "./interfaces"
-import { ComplexOption, DetailedPoll, PollEdit, SimplePoll, VoteChange } from "./extraInterfaces"
+import {
+    ComplexOption,
+    DetailedPoll,
+    NotificationPreferences,
+    PollEdit,
+    SimplePoll,
+    VoteChange
+} from "./extraInterfaces"
 
 export interface CreateUserRequest {
     firstName: string
@@ -78,3 +85,6 @@ export interface AdminEditUserRequest extends EditUserRequest {
     userID: tUserID
     admin?: boolean
 }
+
+export interface ChangeNotificationRequest extends NotificationPreferences {}
+export interface ChangeNotificationResponse extends NotificationPreferences {}
