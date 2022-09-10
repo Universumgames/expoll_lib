@@ -105,3 +105,12 @@ export interface NotificationPreferences {
     pollEdited: boolean
     pollArchived: boolean
 }
+
+export enum NotificationType {
+    voteChange = "voteChange",
+    userAdded = "userAdded",
+    userRemoved = "userRemoved",
+    pollDeleted = "pollDeleted",
+    pollEdited = "pollEdited",
+    pollArchived = "pollArchived"
+}
