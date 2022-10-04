@@ -42,7 +42,7 @@ export interface SimpleUserVotes {
 }
 
 export interface SimpleUserNote {
-    user: SimpleUser
+    userID: tUserID
     note: string
 }
 

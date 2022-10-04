@@ -123,7 +123,7 @@ export enum VoteValue {
 }
 
 export interface IPollUserNote {
-    userID: tUserID
+    user: IUser
     poll: IPoll
     note: string
 }
