@@ -14,7 +14,8 @@ export interface CreateUserRequest {
     lastName: string
     mail: string
     username: string
-    captcha: string
+    captcha?: string
+    appAttest?: string
 }
 
 export interface CreateUserResponse {
