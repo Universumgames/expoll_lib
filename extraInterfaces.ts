@@ -23,9 +23,9 @@ export interface ComplexOption {
 export const empty = {
     id: 0,
     value: "",
-    dateStart: new Date(),
+    dateStart: new Date().getTime(),
     dateEnd: undefined,
-    dateTimeStart: new Date(),
+    dateTimeStart: new Date().getTime(),
     dateTimeEnd: undefined
 } as ComplexOption
 
