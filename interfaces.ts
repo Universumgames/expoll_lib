@@ -3,8 +3,8 @@ export type tUserID = string
 export type tPollID = string
 export type tOptionId = number
 
-export type tDate = Date
-export type tDateTime = Date
+export type tDate = number
+export type tDateTime = number
 
 export enum ReturnCode {
     OK = 200,
