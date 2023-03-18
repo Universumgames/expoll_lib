@@ -77,6 +77,7 @@ export interface PollEdit {
     description?: string
     maxPerUserVoteCount?: number
     userRemove?: tUserID[]
+    userAdd?: string[]
     votes?: { userID: tUserID; optionID: tOptionId; votedFor: VoteValue }[]
     options?: ComplexOption[]
     delete?: boolean
