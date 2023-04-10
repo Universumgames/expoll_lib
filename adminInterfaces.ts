@@ -9,4 +9,5 @@ export interface UserInfo {
     admin: boolean
     active: boolean
     superAdmin: boolean
+    oidcConnections: string[]
 }
